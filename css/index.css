@@ -1,1 +1,362 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+/***  Variables  ***/
+/*colors*/
+/*fonts*/
+/*** Mix-ins  ***/
+.content-border-details {
+  border-radius: 8px;
+  box-shadow: 4px 5px #bbb;
+}
+.border-primary {
+  border-bottom: 1px solid #7a0000;
+}
+.flex-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.font-content {
+  color: 'Raleway';
+  font-size: 1.1em;
+  line-height: 120%;
+}
+/*** Start file ***/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #f7f7f7;
+}
+header nav {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  margin-bottom: 50px;
+}
+header nav a {
+  text-align: right;
+  color: grey;
+  text-decoration: none;
+  padding: 0 15px 0px;
+  color: #444;
+  border-left: 1px solid black;
+  font-family: 'Raleway';
+  font-weight: extra-light;
+  font-size: 1.4em;
+}
+@media (max-width: 500px) {
+  header nav a {
+    border: none;
+  }
+}
+header nav a:hover {
+  color: #7a0000;
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+  /*** Basic Styling ***/
+  /*** Header ***/
+}
+@media (max-width: 500px) {
+  .container {
+    max-width: 98%;
+  }
+}
+.container h2 {
+  color: #7a0000;
+  font-size: 2.25em;
+  font-family: 'Sedgwick Ave';
+}
+.container h3 {
+  color: #000000;
+  font-size: 1.4em;
+  font-family: 'Raleway';
+}
+.container h5 {
+  color: #000000;
+  font-size: 1.1em;
+}
+.container .resume-header {
+  background-color: white;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  box-shadow: 4px 5px #bbb;
+}
+@media (max-width: 500px) {
+  .container .resume-header {
+    max-width: 100%;
+  }
+}
+.container .resume-header .resume-header-top {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 1px solid #7a0000;
+}
+@media (max-width: 500px) {
+  .container .resume-header .resume-header-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.container .resume-header .resume-header-top .itemleft {
+  width: 40%;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+@media (max-width: 500px) {
+  .container .resume-header .resume-header-top .itemleft {
+    width: 100%;
+  }
+}
+.container .resume-header .resume-header-top .itemright {
+  width: 60%;
+}
+.container .resume-header .resume-header-top .itemright h2 {
+  padding-bottom: 20px;
+  padding-left: 15px;
+}
+.container .resume-header .resume-header-top .itemright h3 {
+  padding-bottom: 30px;
+  padding-left: 15px;
+}
+@media (max-width: 500px) {
+  .container .resume-header .resume-header-top .itemright {
+    width: 100%;
+  }
+}
+.container .resume-header .resume-header-top .itemright .resume-contact {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .container .resume-header .resume-header-top .itemright .resume-contact {
+    flex-direction: column;
+  }
+}
+.container .resume-header .resume-header-top .itemright .resume-contact .resume-contactbox h5 {
+  padding-bottom: 8px;
+  letter-spacing: 2.5px;
+}
+@media (max-width: 500px) {
+  .container .resume-header .resume-header-top .itemright .resume-contact .resume-contactbox h5 {
+    padding-bottom: 4px;
+    padding-top: 8px;
+  }
+}
+.container .resume-header .resume-summary {
+  padding: 20px 40px 20px 40px;
+}
+.container .resume-header .resume-summary p {
+  font-size: 1.4em;
+}
+@media (max-width: 500px) {
+  .container .resume-header .resume-summary {
+    max-width: 100%;
+    padding: 15px;
+  }
+  .container .resume-header .resume-summary .overflow {
+    white-space: wrap;
+  }
+}
+.container .resume-skills {
+  border-radius: 8px;
+  box-shadow: 4px 5px #bbb;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  flex-direction: row;
+}
+.container .resume-skills p {
+  color: 'Raleway';
+  font-size: 1.1em;
+  line-height: 120%;
+}
+@media (max-width: 500px) {
+  .container .resume-skills {
+    flex-direction: column;
+    flex-wrap: no-wrap;
+  }
+}
+.container .resume-skills .resume-skills-item {
+  width: 49.5%;
+}
+@media (max-width: 500px) {
+  .container .resume-skills .resume-skills-item {
+    width: 100%;
+  }
+}
+.container .resume-skills .resume-skills-item .item1 {
+  border-right: 1px solid #7a0000;
+  border-bottom: 1px solid #7a0000;
+  padding: 15px;
+  height: 350px;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+@media (max-width: 500px) {
+  .container .resume-skills .resume-skills-item .item1 {
+    height: 100%;
+    border-right: none;
+  }
+}
+.container .resume-skills .resume-skills-item .item2 {
+  border-bottom: 1px solid #7a0000;
+  padding: 15px;
+  height: 100%;
+}
+.container .resume-skills .resume-skills-item .item3 {
+  border-right: 1px solid #7a0000;
+  padding: 15px;
+  height: 100%;
+  height: 350px;
+  margin-bottom: 4px;
+}
+@media (max-width: 500px) {
+  .container .resume-skills .resume-skills-item .item3 {
+    height: 100%;
+    border-right: none;
+    border-bottom: 1px solid #7a0000;
+  }
+}
+.container .resume-skills .resume-skills-item .item4 {
+  padding: 15px;
+  height: 100%;
+}
